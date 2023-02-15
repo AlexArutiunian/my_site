@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        main{
+            padding-top: 80px;
+        }
+        header{
+            position: fixed;
+            width: 100%;
+            background-color: rgb(82, 7, 7);
+            font-size: 35px;
+            
+        }
+        .btn{
+            margin: 10px;
+            margin-left: 0px;
+            background-color: rgb(82, 7, 7);
+            border: 0px;
+            font-size: 35px;
+            color: rgb(184, 62, 62);
+            
+
+        }
+        
+        nav{
+            margin-top: 60px;
+            font-size: 35px;
+            display: block;
+            position: fixed;
+            top: 0;
+            background-color: rgb(10, 10, 49);
+            width: 50%;
+            box-sizing: border-box;
+            border: 1px solid black;
+            
+           
+        
+        }
+        .menu ul{
+           
+            text-decoration: none;
+            padding: 5px;
+            margin: 5px;
+            
+            
+        }
+        @media (max-width: 769px) {
+            .menu li{
+                font-size: 20px;
+                padding-bottom: 5px;
+                
+            }
+
+        }
+        @media (min-width: 769px){
+            .menu li{
+                font-size: 25px;
+                padding-bottom: 5px;
+                
+            }
+        }
+        
+        hr {
+            display: block;
+            height: 1px;
+            border: 0;
+            border-top: 1px solid #ccc;
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        
+        
+        .menu {
+            visibility: hidden;
+            opacity: 0;
+        }
+        .menu.open {
+            transition: .5s visibility linear, .5s opacity linear;
+            visibility: visible;
+            opacity: 1;
+        }
+        .Logo{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <button class="btn">≡</button>
+        <nav class="menu">
+            <ul>
+                <li><a href="#" target="_blank" >Обо мне</a></li>
+                <hr>
+                <li><a href="#" target="_blank">Контакты и соцсети</a></li>
+                <hr>
+                <li><a href="#" target="_blank">Философия</a></li>
+                <hr>
+                <li><a href="#" target="_blank">Прикладная биохимия</a></li>
+                <hr>
+                <li><a href="#" target="_blank">Программирование</a></li>
+                <hr>
+                <li><a href="#" target="_blank">Путешествия</a></li>
+                <hr>
+            </ul>
+            
+        </nav>
+        <a class="Logo" href="#">Блог про мои знания о мире и природе.</a>
+    </header>
+    <main>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque mollitia odit tempora, cupiditate officiis iusto optio quo quasi quibusdam, laboriosam facilis temporibus? Dolore blanditiis atque optio sint repudiandae eveniet culpa?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, doloribus! Placeat, repellat! Minima quibusdam a ratione tempore recusandae, nihil dolores, fuga animi, enim aspernatur soluta cumque eveniet provident quam voluptatem.
+    </main>
+   
+</body>
+<script>
+    const btnMenu = document.querySelector(".btn");
+ const menu = document.querySelector(".menu");
+ const toggleMenu = function () {
+     menu.classList.toggle("open");
+ }
+ 
+ btnMenu.addEventListener("click", function (e) {
+     e.stopPropagation();
+     toggleMenu();
+ });
+ 
+ document.addEventListener("click", function (e) {
+     const target = e.target;
+     const its_menu = target == menu || menu.contains(target);
+     const its_btnMenu = target == btnMenu;
+     const menu_is_active = menu.classList.contains("open");
+ 
+     if (!its_menu && !its_btnMenu && menu_is_active) {
+         toggleMenu();
+     }
+ }); 
+ </script>
+</html>
