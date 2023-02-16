@@ -62,14 +62,16 @@ nav{
 @media (min-width: 769px){
     .menu li{
         font-size: 25px;
+        padding-top: 5px;
         padding-bottom: 5px;
         
     }
 }
-@media (max-width: 300px){
+@media (max-width: 400px){
     .menu li{
         font-size: 12px;
-        padding-bottom: 10px;
+        padding-top: 10px;
+        padding-bottom: 5px;
         
     }
 }
@@ -103,12 +105,22 @@ a{
 }
 @media (max-width: 300px){
     .Logo{
-
-        font-size: 13px;
+        font-size: 12px;
+    }
+}
+@media (min-width: 300px){
+    @media (max-width: 769px){
+        .Logo{
+            font-size: 18px;
+        }
     }
 }
 
 main{
     margin-left: 10%;
     margin-right: 10%;
+}
+
+.quad{
+    margin-left: 5px;
 }
