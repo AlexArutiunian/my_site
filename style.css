@@ -1,50 +1,92 @@
-body{
-    margin: 0;
-    padding: 0;
-    letter-spacing: 0px;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Signika', sans-serif;
-    background-color: rgb(106, 112, 137);
+
+:root{
+    --sky: rgb(85, 188, 243);
 }
 
-main{
-    
-    padding-top: 120px;
-}
 header{
     position: fixed;
     width: 100%;
-    background-color: rgb(82, 7, 7);
-    font-size: 35px;
-    
+    top:0;
+    left:0;
 }
+
+body{
+    padding: 0;
+    background-color: var(--sky);
+    font-family: 'Inter', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Signika', sans-serif;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.refs a{
+    
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.refs{
+    padding-top: 20px;
+    margin-left: 15%;
+    margin-right: 10%;
+}
+
+.refs .lang{
+    margin: 2px;
+}
+
+.refs .lang.ru{
+    margin-right: 5%;
+}
+
+@media (max-width: 1200px) {
+    .refs .lang.ru{
+        margin-right: 1%;
+    }
+    .refs{
+        padding-top: 20px;
+        margin-left: 5%;
+        margin-right: 0%;
+    }   
+}
+
 .btn{
-    margin: 10px;
-    margin-left: 0px;
-    background-color: rgb(82, 7, 7);
+    
+    background-color: var(--sky);
     border: 0px;
     font-size: 35px;
-    color: rgb(184, 62, 62);
-    
+    color: black;
 
 }
 
-nav{
+.menu{
+    margin-top: 80px;
+    
+}
+.menu_ nav{
+   
+    margin-left: -170px;
+    
     margin-top: 60px;
-    font-size: 35px;
+    font-size: 30px;
     display: block;
     position: fixed;
     top: 0;
-    background-color: rgb(10, 10, 49);
-    width: 50%;
+    background-color: var(--sky);
+    width: 200px;
     box-sizing: border-box;
-    border: 1px solid black;
+   
     
    
 
 }
 .menu ul{
-   
+    z-index: 20;
+    list-style: none;
     text-decoration: none;
     padding: 5px;
     margin: 5px;
@@ -53,7 +95,7 @@ nav{
 }
 @media (max-width: 769px) {
     .menu li{
-        font-size: 20px;
+        font-size: 15px;
         padding-bottom: 5px;
         
     }
@@ -61,7 +103,7 @@ nav{
 }
 @media (min-width: 769px){
     .menu li{
-        font-size: 25px;
+        font-size: 15px;
         padding-top: 5px;
         padding-bottom: 5px;
         
@@ -69,11 +111,31 @@ nav{
 }
 @media (max-width: 400px){
     .menu li{
-        font-size: 12px;
+        font-size: 15px;
         padding-top: 10px;
         padding-bottom: 5px;
         
     }
+}
+
+@media (max-width: 769px){
+     .refs .desk{
+        display: none;
+     }
+     .menu_ nav{
+        
+        margin-left: -170px;  
+        margin-top: 40px;
+        font-size: 30px;
+        display: block;
+        position: fixed;
+        top: 0;
+        background-color: var(--sky);
+        width: 200px;
+        box-sizing: border-box;
+    
+    }
+     
 }
 
 hr {
@@ -84,11 +146,6 @@ hr {
     margin: 0;
     padding: 0;
 }
-a{
-    text-decoration: none;
-    color: white;
-}
-
 
 .menu {
     visibility: hidden;
@@ -99,28 +156,49 @@ a{
     visibility: visible;
     opacity: 1;
 }
-.Logo{
 
-    font-size: 20px;
-}
-@media (max-width: 300px){
-    .Logo{
-        font-size: 12px;
-    }
-}
-@media (min-width: 300px){
-    @media (max-width: 769px){
-        .Logo{
-            font-size: 18px;
-        }
+
+@media (min-width: 500px){
+    .menu_{
+        
+        position: absolute;
+        left: 90%;
+        right: 15%;
+        top: 5px;
     }
 }
 
+@media (max-width: 500px){
+    .menu_{
+        
+        position: absolute;
+        left: 85%;
+        right: 15%;
+        top: 5px;
+    }
+}
+
+.main_me{
+    position: flex;
+    left: 0;
+    
+    
+}
+@media (max-width: 500px){
+    .main_me{
+        position: absolute;
+        left: 0;
+        width: 100%;
+        top: 40px;
+        /*это нужно чтобы 
+        картинка не перекрывала 
+        выползающее меню*/
+        z-index: -1;
+        
+    }
+}
 main{
+    padding-top: 50px;
     margin-left: 10%;
     margin-right: 10%;
-}
-
-.quad{
-    margin-left: 5px;
 }
