@@ -558,3 +558,12 @@ hr {
         padding-right: 10px;
     }
 }
+
+.list_post_ li{
+    margin-bottom: 10px;
+    list-style:decimal;
+}
+.list_post_ a{
+    text-decoration:underline;
+    color: rgb(118, 7, 7);
+}

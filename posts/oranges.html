@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alexrenat</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@500&family=Signika:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    
+
+    
+
+</head>
+<body>
+    <header>
+        <div class="refs">
+            <a class="lang" href="">EN</a>
+            <a class="lang ru" href="">RU</a>
+            <a class="desk" href="../contacts.html">Контакты и соцсети</a>
+            <a class="desk" href="">Визитка</a>
+            <a class="desk" href="../posts.html">Посты</a>
+            <a class="desk" href="../index.html">Главная</a>
+            
+        </div>
+        <div class="menu_">
+            <button class="btn">≡</button>
+            <nav class="menu">
+                <ul>
+
+                    <li><a href="../index.html" target="_blank" >Главная страница</a>
+                    <hr>
+                    </li>
+                    
+                    <li><a href="../contacts.html" target="_blank" >Обо мне</a>
+                    <hr>
+                    </li>
+                 
+                    <li><a href="../contacts.html" target="_blank">Контакты и соцсети</a>
+                    <hr>
+                    </li>
+                    <li><a href="../posts.html" target="_blank" >Все посты</a>
+                    <hr>
+                    </li>
+                    
+                    <li><a href="phylosophy.html" target="_blank">Философия</a>
+                    <hr>
+                    </li>
+                   
+                    <li><a href="bio.html" target="_blank">Прикладная биохимия</a>
+                    <hr>
+                    </li>
+                   
+                    <li><a href="prog.html" target="_blank">Программирование</a>
+                    <hr>
+                    </li>
+                    
+                    <li><a href="travel.html" target="_blank">Путешествия</a>
+                    <hr>
+                    </li>
+                    
+                </ul>
+                
+            </nav>
+        </div>
+
+        
+        
+        
+    </header>
+    
+    <a href="../posts.html#list_posts" class="list_posts_btn double-border-button">
+        Перейти к списку всех постов
+    </a>
+    <div class="main posts" id="oranges">
+        <p class="title">
+            Апельсины не вызывают аллергию.
+        </p>
+        <img class="aaj1 doct" src="../img/ap.svg" alt="" width="200">
+        <p>
+            Апельсины не вызывают аллергию, они содержат энзимы, которые запускают процесс детоксикации через лифматическую систему: нос (сопли), кожу (её раздувание, покраснения). Эти токсины попали в организм из окружающей среды и, по причине невозможности использования в качестве энергии, связались с жирами тела...
+
+        </p>
+
+        <p>
+            Именно поэтому наши цивилизованные предки в деревнях лет 100 назад не болели так часто. Их среда была чище. Если исследовать процент аллергии среди жителей деревень и жителей городов то я могу спрогнозировать результат: среди жителей деревень процент будет ниже, ведь среда более чистая.
+        </p>
+        <p>
+            Чтобы избавиться от аллергии её не надо стопорить лекарствами. Надо позволить организму провести естественный процесс выведения токсинов. Таблетки же остановят этот процесс и токсины останутся в теле. 
+
+        </p>
+        <p>
+            Я утверждаю, что не существует человека, который сделал все так как я рассказываю и не смог освободиться от неприятного и тяжёлого процесса вывода токсинов в виде аллергии.
+        </p>
+        <p>
+            Также я утверждаю, что существует много людей, которые каждый год тормозят естественный процесс выведения токсинов в период аллергии и в следующий период детоксикации их состояние такое же или хуже.
+        </p>
+    </div>
+    <a href="../posts.html#list_posts" class="list_posts_btn double-border-button">
+        Перейти к списку всех постов
+    </a>
+
+    <div class="down_main">
+
+    </div>
+    
+    
+    <script>
+        const btnMenu = document.querySelector(".btn");
+        const menu = document.querySelector(".menu");
+        const toggleMenu = function () {
+            menu.classList.toggle("open");
+        }
+        
+        btnMenu.addEventListener("click", function (e) {
+            e.stopPropagation();
+            toggleMenu();
+        });
+        
+        document.addEventListener("click", function (e) {
+            const target = e.target;
+            const its_menu = target == menu || menu.contains(target);
+            const its_btnMenu = target == btnMenu;
+            const menu_is_active = menu.classList.contains("open");
+        
+            if (!its_menu && !its_btnMenu && menu_is_active) {
+                toggleMenu();
+            }
+        });
+         
+     </script>
+     
+  
+</body>
+
+</html>
