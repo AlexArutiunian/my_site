@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alexrenat</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@500&family=Signika:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.scss">
+
+    
+
+</head>
+<body>
+    <header>
+        <div class="refs">
+            <a class="lang" href="">EN</a>
+            <a class="lang ru" href="">RU</a>
+            <a class="desk" href="contacts.html">Контакты и соцсети</a>
+            <a class="desk" href="visit.html">Визитка</a>
+            <a class="desk" href="pocts.html">Посты</a>
+            <a class="desk" href="index.html">Главная</a>
+            
+        </div>
+        <div class="menu_">
+            <button class="btn">≡</button>
+            <nav class="menu">
+                <ul>
+
+                    <li><a href="index.html">Главная страница</a>
+                    <hr>
+                    </li>
+                    
+                    <li><a href="visit.html#about_me">Обо мне</a>
+                    <hr>
+                    </li>
+                 
+                    <li><a href="contacts.html">Контакты и соцсети</a>
+                    <hr>
+                    </li>
+                    <li><a href="posts.html">Все посты</a>
+                    <hr>
+                    </li>
+                    
+                    <li><a href="phylosophy.html">Философия</a>
+                    <hr>
+                    </li>
+                   
+                    <li><a href="bio.html">Прикладная биохимия</a>
+                    <hr>
+                    </li>
+                   
+                    <li><a href="prog.html">Программирование</a>
+                    <hr>
+                    </li>
+                    
+                    <li><a href="travel.html">Путешествия</a>
+                    <hr>
+                    </li>
+                    
+                </ul>
+                
+            </nav>
+        </div>
+
+        
+        
+        
+    </header>
+    
+    
+    <div class="main posts" id="list_posts">
+        <p class="title">
+            О моих профессиональных навыках 
+        </p>
+        <p>
+            Образование: МФТИ ФРТК 2021 - 2025, ПМФ.
+        </p>
+        <p>
+
+            В свободное время изучаю С++, алгоритмы и
+            структуры данных, python (для решения 
+            по-большей части сугубо прикладных задач с
+            использованием современных библиотек),
+            немного занимаюсь html, css и 
+            по необходимости JS.
+        </p>
+
+        <p>
+            Помимо изучения ЯП стараюсь прикладывать
+            полученные навыки к реальным задачам.
+            Примеры работ можно посмотреть на гитхаб,
+            ссылка на который зашита в иконке ниже.
+        </p>
+        <a href="https://github.com/AlexArutiunian" >
+            <img class="visit" src="img/github.svg" alt="">
+        </a>
+        <br id="about_me">
+        <br>
+
+        <p class="title" >
+            Обо мне
+        </p>
+
+        <p>
+            Я родился в 2003 году в Курганской области, деревне Красный Уралец.
+            До 15 лет все время жил в посёлке Юргамыш, что неподалёку от
+            Красного Уральца.
+        </p>
+
+        <p>
+            Моя семья - люди, так сказать, нехалявщики, и родители воспитали
+            меня таким же - упорно трудящимся для достижения желаемого 
+            результата. Это качество во мне прочного закрепилось.
+            Но переехав на большую часть года из родительского дома я стал 
+            задаваться вопросами такими, например, как:
+            Почему я медленнее обучаем по сравнению с многими другими людьми?
+            (ответ - лучше делать меньше, но лучше чем больше, но хуже)
+            Почему мои руки имеют диаметр ниже среднего и длину выше среднего,
+            а зимой они мёрзнут сильнее других частей тела?
+            (ответ - эксперимент Поттенджера)
+        </p>
+        <p>
+            Я постепенно отвечал на такие вопросы с помощью убедительных
+            научных исследований и опыта людей по всему миру, столкнувшихся 
+            с этими же вопросами. Так я пришел к созданию телеграм канала
+            и этого блога, в которых буду публиковать ответы на
+            интересующие меня вопросы, подобные тем, что я написал
+            в качестве примеров выше.
+        </p>
+
+        <p>
+            Если я вас заинтересовал, приглашаю в мой телеграм канал.
+            Перейти можно, кликнув по иконке телеграма, которая расположена ниже.
+        </p>
+
+        <a href="https://t.me/renaturlife">
+            <img class="visit" src="img/tg_ch.svg" width="400" alt="">
+        </a>
+        
+        
+    </div>
+
+    <div class="down_main">
+
+    </div>
+    
+    
+    <script>
+        const btnMenu = document.querySelector(".btn");
+        const menu = document.querySelector(".menu");
+        const toggleMenu = function () {
+            menu.classList.toggle("open");
+        }
+        
+        btnMenu.addEventListener("click", function (e) {
+            e.stopPropagation();
+            toggleMenu();
+        });
+        
+        document.addEventListener("click", function (e) {
+            const target = e.target;
+            const its_menu = target == menu || menu.contains(target);
+            const its_btnMenu = target == btnMenu;
+            const menu_is_active = menu.classList.contains("open");
+        
+            if (!its_menu && !its_btnMenu && menu_is_active) {
+                toggleMenu();
+            }
+        });
+         
+     </script>
+     
+  
+</body>
+
+</html>

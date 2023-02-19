@@ -567,3 +567,9 @@ hr {
     text-decoration:underline;
     color: rgb(118, 7, 7);
 }
+
+@media (max-width: 600px){
+    .visit{
+        width: 70%;
+    }
+}
