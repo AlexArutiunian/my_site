@@ -391,15 +391,20 @@ hr {
 .conts img{
     margin-top: 20px;
 }
-
+.img_visit{
+    float: right;
+}
 @media (min-width: 300px){
     .img_visit{
         padding-left: 10px;
         padding-bottom: 10px;
+        
+        
     }
 }
 @media (max-width: 300px){
     .img_visit{
+        
         margin-left: 10%;
         margin-right: 10%;
         padding-bottom: 10px;    }
