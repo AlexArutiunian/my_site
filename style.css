@@ -78,6 +78,7 @@ a{
     margin-top: 80px;
     
 }
+
 .menu_ nav{
    
     margin-left: -170px;
@@ -177,6 +178,14 @@ hr {
         right: 15%;
         top: 5px;
     }
+
+    .manu_.posts{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0px;
+    }
+    
 }
 
 @media (max-width: 500px){
@@ -467,11 +476,85 @@ hr {
 }
 
 .title{
+    font-weight: bold;
     text-align: center;
+    font-size: 20px;
 }
+
+
 
 .best_post img{
     float: right;
     padding-right: 10px;
     padding-bottom: 10px;
+}
+
+.btn.posts{
+    font-size: 21px;
+}
+
+.list_posts_btn{
+    margin-top: 100px;
+    
+}
+
+@media (min-width: 1200px){
+    .list_posts_btn{
+        
+        margin-left: 15%;
+    }
+}
+
+@media (max-width: 1200px){
+    @media (min-width: 600px){
+        .list_posts_btn{
+            
+            margin-left: 5%;
+        }
+    }
+}
+
+@media (max-width: 600px){
+    
+    .list_posts_btn{
+        margin-left: 12%;
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+}
+
+@media (max-width: 600px){
+    .aaj1{
+        width: 100%;
+        float: right;
+        padding-bottom: 10px;
+    }
+    
+}
+@media (min-width: 600px){
+    .aaj1{
+        width: 50%;
+        float: right;
+        padding-bottom: 10px;
+    }
+    .aaj1.el{
+        width: 25%;
+        float: right;
+        padding-bottom: 10px;
+        padding-right: 10px;
+    }
+    .aaj1.doct{
+        width: 25%;
+        float: left;
+        padding-bottom: 10px;
+        padding-right: 10px;
+    }
+    .aaj1.comp{
+        width: 25%;
+        float: left;
+        padding-bottom: 10px;
+        padding-right: 10px;
+    }
 }
