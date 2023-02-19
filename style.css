@@ -460,3 +460,13 @@ hr {
 
     }
 }
+
+.title{
+    text-align: center;
+}
+
+.best_post img{
+    float: right;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
