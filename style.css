@@ -216,11 +216,40 @@ hr {
         
     }
 }
-main{
-    padding-top: 50px;
-    margin-left: 10%;
-    margin-right: 10%;
+@media (min-width: 1100px) {
+    main{
+        padding-top: 100px;
+        
+        margin-left: 10%;
+        margin-right: 10%;
+        
+    }
+    
+    .text_main{
+        margin-top: 50px;
+        margin-left: 30%;
+        margin-right: 10%;
+        
+    }
+    .text_main .part1.pred{
+        margin-bottom: 50px;
+    }
+    .text_main .lern_btn{
+        
+        margin-right: 10%;
+    }
+
+    
 }
+
+@media (max-width: 1100px) {
+    main{
+        padding-top: 50px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
 
 @media (min-width: 500px){
     @media (max-width: 600px){
@@ -299,6 +328,7 @@ main{
         margin-left: 0px;
         margin-right: 50%;
      }
+     @media (max-width: 1100px){
     .text_main{
         margin-top: 50px;
         margin-left: 30%;
@@ -309,6 +339,7 @@ main{
         
         margin-right: 10%;
     }
+}
 }
 
 .double-border-button {
@@ -359,4 +390,73 @@ main{
 }
 .conts img{
     margin-top: 20px;
+}
+
+@media (min-width: 300px){
+    .img_visit{
+        padding-left: 10px;
+        padding-bottom: 10px;
+    }
+}
+@media (max-width: 300px){
+    .img_visit{
+        margin-left: 10%;
+        margin-right: 10%;
+        padding-bottom: 10px;    }
+}
+
+@media (max-width: 700px){
+
+    .best_post.desk{
+        display: none;
+    }
+    .best_post img{
+        
+        width: 100%;
+    }
+    .best_post{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .post_btn{
+        height: 20px;
+        padding: 2px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-left: 20%;
+        margin-right: 10%;
+
+    }
+}
+
+@media (min-width: 700px){
+    .best_post.phone{
+        display: none;
+    }
+    .bp{
+        margin: 10px;
+    }
+    .best_post img{
+        margin-left: 10px;
+        margin-bottom: 10px;
+        width: 50%;
+    }
+    .best_post.fresh img{
+        margin-left: 10px;
+        margin-bottom: 10px;
+        width: 30%;
+    }
+    .best_post{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .post_btn{
+        height: 20px;
+        padding: 2px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-left: 10px;
+        margin-right: 10%;
+
+    }
 }
