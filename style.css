@@ -455,6 +455,9 @@ hr {
         margin-bottom: 10px;
         width: 50%;
     }
+    .best_post .cats_pct{
+        width: 30%;
+    }
     .best_post.fresh img{
         margin-left: 10px;
         margin-bottom: 10px;
@@ -526,7 +529,7 @@ hr {
 }
 
 @media (max-width: 600px){
-    .aaj1{
+    .pct{
         width: 100%;
         float: right;
         padding-bottom: 10px;
@@ -534,24 +537,24 @@ hr {
     
 }
 @media (min-width: 600px){
-    .aaj1{
+    .pct{
         width: 50%;
         float: right;
         padding-bottom: 10px;
     }
-    .aaj1.el{
+    .pct.right{
         width: 25%;
         float: right;
         padding-bottom: 10px;
         padding-right: 10px;
     }
-    .aaj1.doct{
+    .pct.left{
         width: 25%;
         float: left;
         padding-bottom: 10px;
         padding-right: 10px;
     }
-    .aaj1.comp{
+    .pct.right2{
         width: 25%;
         float: left;
         padding-bottom: 10px;
@@ -622,5 +625,6 @@ hr {
     }
    
 }
+
 
 
