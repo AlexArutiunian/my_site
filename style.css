@@ -579,3 +579,48 @@ hr {
         display: none;
     }
 }
+
+@media (min-width: 600px){
+    .soc_phone_up{
+        display: none;
+    }
+}
+
+@media (min-width: 600px){
+    .soc_phone_up{
+        display: none;
+    }
+}
+
+@media (max-width: 600px){
+    @media (min-width: 300px){
+        .soc_ph img{
+            width: 10%;
+           
+        }
+        .soc_ph{
+            right: 0px;
+            left: 100px;
+            top: 15px;
+            position: absolute;
+        }
+        
+    
+        
+    }
+    
+}
+@media (max-width: 300px){
+    .soc_ph img{
+        width: 10%;
+       
+    }
+    .soc_ph{
+        left: 80px;
+        top: 17px;
+        position: absolute;
+    }
+   
+}
+
+
